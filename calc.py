@@ -14,19 +14,18 @@ class Simplecalc:
 
 # create a function for -
 # DOB
-import datetime # imported module that gets the current year
-def birth_year(age):
-    current_year = datetime.date.today().year
-    birth_year = current_year - age
-    return birth_year
-print(birth_year(24))
+    #import datetime # imported module that gets the current year
+    def dob(self, age):
+        dob = 2022 - age
+        return dob
+        #print(dob(24))
 
 # %
-def percentage(val1, val2):
-    return val1 / val2
-print(percentage(50,2))
+    def percentage(self, val1, val2):
+        return val1 % val2
+    #print(percentage(50,2))
 
-# /
-def division(val1, val2):
-    return val1 / val2
-print(division(10,2))
+    # /
+    def cm_to_m(self, val1):
+        return val1 / 100
+    #print(division(10,2))
